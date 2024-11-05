@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+// function Apps() {
+//   return (
+//     <>
+//       <h1>title</h1>
+//       <p>
+//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae
+//         aut totam porro optio ab quidem voluptatum fuga reprehenderit
+//         praesentium! Nulla impedit dolorem maxime perspiciatis!
+//       </p>
+//     </>
+//   );
+// }
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+
+function Apps() {  
+  const title = "Coba JSX{}";  
+  const pargarphs = "Lorem ipsum dolor sit amet.";  
+  const tema = {  
+  pargarph :{  
+  backgroundColor : "blue",  
+  color : "white",  
+  },  
+  };  
+  
+  return (  
+  <>  
+  <img src="cobaReact.png" alt="cobaReact" />  
+  <h1 style={{ color: "red" }}>{title}</h1>  
+  <p className="testing" style={tema.pargarph}>  
+  {pargarphs}  
+  </p>  
+  </>  
+  );  
+  }  
+
+export default Apps;
