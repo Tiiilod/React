@@ -1,4 +1,4 @@
-import React from "react";
+import App from "./props/meeting 3";
 
 // function Apps() {
 //   return (
@@ -13,27 +13,26 @@ import React from "react";
 //   );
 // }
 
+function Apps() {
+  const title = "Coba JSX{}";
+  const pargarphs = "Lorem ipsum dolor sit amet.";
+  const tema = {
+    pargarph: {
+      backgroundColor: "blue",
+      color: "white",
+    },
+  };
 
-
-function Apps() {  
-  const title = "Coba JSX{}";  
-  const pargarphs = "Lorem ipsum dolor sit amet.";  
-  const tema = {  
-  pargarph :{  
-  backgroundColor : "blue",  
-  color : "white",  
-  },  
-  };  
-  
-  return (  
-  <>  
-  <img src="cobaReact.png" alt="cobaReact" />  
-  <h1 style={{ color: "red" }}>{title}</h1>  
-  <p className="testing" style={tema.pargarph}>  
-  {pargarphs}  
-  </p>  
-  </>  
-  );  
-  }  
+  return (
+    <>
+      <img src="cobaReact.png" alt="cobaReact" />
+      <h1 style={{ color: "red" }}>{title}</h1>
+      <p className="testing" style={tema.pargarph}>
+        {pargarphs}
+      </p>
+      <App />
+    </>
+  );
+}
 
 export default Apps;
