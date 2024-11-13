@@ -1,4 +1,4 @@
-import App from "./props/meeting 3";
+import App from "../meeting-3/meeting 3";
 
 // function Apps() {
 //   return (
