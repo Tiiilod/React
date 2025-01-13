@@ -1,6 +1,20 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
+
+
+
+
+
+
+//meeting-4
+import Form from "./meeting/meeting-4/Praktek/fragment/form.jsx";
+import Header from "./meeting/meeting-4/Praktek/fragment/header.jsx";
+import Login from "./meeting/meeting-4/Praktek/layout/login.jsx";
+import Register from "./meeting/meeting-4/Praktek/layout/register.jsx";
+import Pages from "./meeting/meeting-4/Praktek/page/page.jsx";
+//meeting-5
+
 //meeting-8
 import Array2 from './meeting-8/coba/coba-array-8.jsx';
 import Numberss from './meeting-8/coba/coba-number-8.jsx';
@@ -15,7 +29,7 @@ import Produk from './meeting/meeting-9/praktek/soal1.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Produk  />
+    <Register  />
   </StrictMode>,
 )
 
