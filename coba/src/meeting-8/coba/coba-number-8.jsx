@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function UseStates() {
+export default function Numberss() {
   const [umur, setUmur] = useState(15);
 
   function tambahUmur() {
@@ -9,8 +9,17 @@ function UseStates() {
   return (
     <>
       <button onClick={tambahUmur}>You pressed me {umur} times</button>
+      {/* <Halo /> */}
     </>
   );
 }
 
-export default UseStates;
+export function Halo() {
+  return (
+    <>
+      <h2>asd</h2>
+    </>
+  );
+}
+
+// export default Numbers;
