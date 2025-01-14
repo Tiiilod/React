@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { products } from "./product/Product";
+import { products } from "./product";
 
 function ShoppingCard({ title, price, src, quantity, onUpdate }) {
   const increment = () => {
