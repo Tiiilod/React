@@ -8,9 +8,10 @@ import App from './App.jsx'
 import Produk from "./meeting/meeting-9/Praktek/soal1.jsx";
 //meeting-10
 import Soal1 from "./meeting/meeting-10/Praktek/soal1.jsx";
+import CounterLogger from './meeting/meeting-10/Praktek/soal2.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Soal1 />
+    <CounterLogger />
   </StrictMode>,
 )
