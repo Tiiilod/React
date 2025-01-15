@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+// import { useState } from "react";
 
 function Nodepency() {
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
 
   useEffect(() => {
-    console.log(`NYALA`);
+    console.log(`Tombol ditekan sebanyak`);
   });
 
   return (
@@ -20,3 +20,23 @@ function Nodepency() {
 }
 
 export default Nodepency;
+
+
+
+// import React, { useEffect, useState } from 'react';
+
+// function Contoh() {
+//   const [angka, setAngka] = useState(0);
+
+//   useEffect(() => {
+//     console.log(`Angka sekarang: ${angka}`);
+//   }, [angka]); // Akan jalan setiap `angka` berubah
+
+//   return (
+//     <div>
+//       <p>Angka: {angka}</p>
+//       <button onClick={() => setAngka(angka + 1)}>Tambah</button>
+//     </div>
+//   );
+// }
+// export default Contoh;
