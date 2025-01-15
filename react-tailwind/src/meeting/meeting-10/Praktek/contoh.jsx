@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function App() {
+function AppContoh() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppContoh;
