@@ -16,12 +16,3 @@ function CounterLogger() {
 }
 
 export default CounterLogger;
-
-
-
-
-
-
-
-
-
