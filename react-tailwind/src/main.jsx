@@ -11,11 +11,11 @@ import CobaAxios2 from "./meeting/meeting-13/praktek/soal1.jsx";
 import TokoBuku from "./meeting/meeting-14/praktek/soal1.jsx";
 import AxiosCard from "./meeting/meeting-14/praktek/coba1.jsx";
 import Axioshop from "./meeting/meeting-14/praktek/soal2.jsx";
-import AxiosStore from "./meeting/meeting-14/praktek/soal2back.jsx";
+import AxiosStore from "./meeting/meeting-14/praktek/soal2map.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <RouterProvider router={router} /> */}
-    <AxiosStore/>
+    <Axioshop/>
   </StrictMode>
 );

@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import AxiosStore from "./soal2back";
-import { ProductDetail } from "./soal2back";
+import AxiosStore from "./soal2map";
+import { ProductDetail } from "./soal2map";
 
 const router = createBrowserRouter([
   {
