@@ -124,12 +124,17 @@ export function ProductDetail() {
     return price * count;
   };
 
+  // const calculateGrandTotal = () => {
+  //   return posts.reduce((total, product) => {
+  //     return total + calculateTotal(product.price, product.count);
+  //   }, 0);
+  // };
+
   const calculateGrandTotal = () => {
-    return posts.reduce((total, product) => {
-      return total + calculateTotal(product.price, product.count);
+    return Object.values(cart).reduce((total, product) => {
+      return total + product.price * product.quantity;
     }, 0);
   };
-
 
 
   return (

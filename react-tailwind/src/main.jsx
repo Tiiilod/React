@@ -9,11 +9,12 @@ import LoginAxios from "./meeting/meeting-15/praktek/soal1.jsx";
 import Axioshop2 from "./meeting/meeting-15/praktek/soal2.jsx";
 import Login16 from "./meeting/meeting-16/coba/cobaJWT.jsx";
 import Axioshop16 from "./meeting/meeting-16/praktek/jwt-path.jsx";
+import Axioshop from "./meeting/meeting-14/praktek/soal2.jsx";
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <RouterProvider router={router} /> */}
-    <Axioshop16  />
+    <LoginAxios  />
   </StrictMode>
 );
