@@ -1,7 +1,7 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+// import { jwtDecode } from "jwt-decode";
 
 
 
@@ -29,11 +29,21 @@ const CreateUser = () => {
       updatedAt: new Date().toISOString(), // Menambahkan timestamp saat pembuatan
     };
     
+    // axios
+    //   .post("https://api.escuelajs.co/api/v1/users/", newUser)
+    //   .then((response) => setMessage(User created: ${response.data.name}))
+    //   .catch((error) => setMessage(Error: ${error.message}));
+    // };
+
+    // const newUser = {
+    //   name: "John Doe",
+    //   email: "john.doe@example.com", // misalnya, sesuai dengan struktur API
+    // };
+    
     axios
       .post("https://api.escuelajs.co/api/v1/users/", newUser)
-      .then((response) => setMessage(User created: ${response.data.name}))
-      .catch((error) => setMessage(Error: ${error.message}));
-    };
+      .then((response) => setMessage(`User created: ${response.data.name}`))  // Menggunakan backtick
+      .catch((error) => setMessage(`Error: ${error.message}`));  
     
     setFormData({
       name: "",
@@ -79,6 +89,7 @@ const CreateUser = () => {
     {message && <p>{message}</p>}
     </div>
     )
+  }
 };
 
 export default CreateUser;

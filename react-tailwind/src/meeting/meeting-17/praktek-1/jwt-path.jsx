@@ -1,0 +1,49 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AxiosStore2 from "./jwt-map";
+import LoginMas from "./jwt-login";
+import { ProductDetail } from "./jwt-map";
+import { Navigate } from "react-router-dom";
+import Help from "./help";
+import Create from "./create";
+import ProtectedRoute from "./jwt-protect";
+
+const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <LoginMas />,
+  },
+  {
+    path: "/",
+    element: <LoginMas />,
+  },
+  {
+    path: "/help",
+    element: <Help />,
+  },
+  {
+    path: "/create",
+    element: <Create />,
+  },
+  {
+    path: "/product",
+    element: (
+      <ProtectedRoute>
+        <AxiosStore2 />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/product/:id",
+    element: (
+      <ProtectedRoute>
+        <ProductDetail />
+      </ProtectedRoute>
+    ),
+  },
+]);
+
+function Axioshop17() {
+  return <RouterProvider router={router} />;
+}
+
+export default Axioshop17;
