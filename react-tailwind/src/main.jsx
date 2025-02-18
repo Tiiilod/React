@@ -12,6 +12,6 @@ import Menu18 from "./meeting/meeting-18/Praktek-2/menu";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <RouterProvider router={router} /> */}
-    <Menu18  />
+    <Axioshop18  />
   </StrictMode>
 );
